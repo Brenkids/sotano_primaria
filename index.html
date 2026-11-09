@@ -7,11 +7,8 @@
   <meta name="description" content="En Brenkids formamos el criterio financiero de niñas y niños desde la infancia, para que crezcan tomando mejores decisiones con el dinero.">
   <meta name="theme-color" content="#262f7f">
 
-  <!-- Proxima Nova es tipografía con licencia: si la tienes instalada o cargas tus archivos
-       (ver @font-face en styles.css) se usa automáticamente. Montserrat es el respaldo. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Tipografía: Montserrat va incluida en assets/montserrat (funciona sin internet).
+       Si tienes Proxima Nova con licencia, ver @font-face en styles.css. -->
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -271,7 +268,7 @@
       </article>
 
       <article class="card card--orange stat col-5 reveal" style="--d:.08s">
-        <p class="stat__num"><span data-count="26">26</span></p>
+        <p class="stat__num"><span data-count="28">28</span></p>
         <div class="stat__foot">
           <p class="stat__label">escuelas en <b><span data-count="7">7</span> estados</b></p>
           <p class="stat__states">CDMX, Estado de México, Mérida, Morelia, Morelos, Puebla</p>
@@ -342,9 +339,11 @@
 
       <div class="col-5 school__video reveal" style="--d:.08s">
         <div class="video-frame card card--navy">
-          <iframe src="https://www.youtube-nocookie.com/embed/HNX0D5Yf140" title="Video de Brenkids"
-                  loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
+          <video controls playsinline preload="metadata" poster="assets/video-tianguis-poster.jpg"
+                 aria-label="Día de tianguis en Brenkids">
+            <source src="assets/video-tianguis.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
         </div>
       </div>
     </div>
